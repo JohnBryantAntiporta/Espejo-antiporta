@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarZone | Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="header-image">
+        <h1>CarZone</h1>
+        <p>Your Guide to Cars, Reviews, and Automotive Trends</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="page-card">
+        <h2>Contact CarZone</h2>
+        <p>Have a question or want to share a car topic? Send us a message using the form below.</p>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> carzone@example.com</p>
+            <p><strong>Location:</strong> Laguna, Philippines</p>
+        </div>
+
+        <form id="contactForm" action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="formStatus" class="note" role="status" aria-live="polite"></p>
+        <p class="note">Your message will be sent to the connected Google Sheets form service.</p>
+    </section>
+</main>
+
+<footer>
+    <p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a></p>
+    <p><a href="#">Privacy</a> | <a href="#">Terms</a></p>
+    <p>&copy; 2026 CarZone. All rights reserved.</p>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>
